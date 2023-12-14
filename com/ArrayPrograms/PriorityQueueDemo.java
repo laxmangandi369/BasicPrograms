@@ -12,10 +12,11 @@ public class PriorityQueueDemo {
         queue.add("smith");
         queue.add("orlen");
         queue.add("charles");
-        System.out.println(queue);
+        System.out.println("printing elements of priority queue "+ queue);
 
-        System.out.println(queue.element());
-        System.out.println(queue.peek());
+        System.out.println("peek() returns the top of the element by using element() = " + queue.element());// element() will give peek of the element
+        System.out.println("peek() returns the top of the element = " + queue.peek());
+
 
         Iterator<String> iterator = queue.iterator();
         while (iterator.hasNext()){
@@ -23,8 +24,8 @@ public class PriorityQueueDemo {
         }
         // remove() & poll() method removes head of the element
         queue.remove();
-        System.out.println(queue);
+        System.out.println("remove() removes the head of the element " + queue);
         queue.poll();
-        System.out.println(queue);
+        System.out.println("poll() method removes the head of the element = " + queue);
     }
 }

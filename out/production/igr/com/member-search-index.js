@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.ArrayPrograms","c":"SyncExample","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"com.ArrayPrograms","c":"SyncExample","l":"SyncExample()","u":"%3Cinit%3E()"}];updateSearchResults();

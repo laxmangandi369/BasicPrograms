@@ -1,5 +1,5 @@
 package com.ArrayPrograms;
-
+// example for class level lock & object level lock
 class Basic {
     public static synchronized void loop(){
         for(int i=1; i <= 5; i++){

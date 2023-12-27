@@ -893,17 +893,179 @@ public class Test100 {
 
          */
 
+        /*
+
+        System.out.println(String.class.getClassLoader()); // null
+        System.out.println(Test100.class.getClassLoader()); // jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7
+        System.out.println(Student.class.getClassLoader()); // jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7
+
+         */
+
+        /*
+
+        double mb = 1024 * 1024; // which will return in mb
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println("Maximum memory : " + runtime.maxMemory() / mb);
+        System.out.println("Total memory : " + runtime.totalMemory() / mb);
+        System.out.println("Free memory : " + runtime.freeMemory() / mb);
+        System.out.println("counsumed memory : " + (runtime.totalMemory() - runtime.freeMemory()) / mb);
+
+         */
+
+
+        /*
+
+        // Singleton class
+        final class SingletonExample {
+
+            private static SingletonExample s = null;
+
+            private SingletonExample(){
+
+            }
+
+            public static SingletonExample getInstance(){
+                if (s == null){
+                    s = new SingletonExample();
+                }
+                return s;
+            }
+        }
+        class SingletonDemo {
+
+            SingletonExample s1 = SingletonExample.getInstance();
+            System.out.println(s1.hashCode());
+
+            SingletonExample s2 = SingletonExample.getInstance();
+			System.out.println(s2.hashCode());
+        }
+
+         */
+
+        /*
+
+        // find the first & last occurence in array
+
+        class Test {
+
+            public static void findFirstAndLast(int arr[], int x){
+
+                int n = arr.length;
+                int first = -1;
+                int last =-1;
+                for(int i=0; i<n; i++){
+                    if(x != arr[i]){
+                        continue;
+                    }
+                    if(first = -1){
+                        first =i;
+                        last =i;
+                    }
+                    if(first != -1){
+                        System.out.println("First occurrence " + first);
+                        System.out.println("Last occurence "+ last);
+
+                    }
+                    else{
+                        System.out.println("Not Found");
+                    }
+                }
 
 
 
+            }
+
+            public static void main(String[] args){
+                int arr[]={5,7,7,8,8,8,8,8,10};
+                int x=8;
+                findFirstAndLast(arr,x)
+            }
+        }
+
+         */
+
+
+                /*
+
+        // to send the custom exception
+        class TooYoungException extends RuntimeException {
+
+            public TooYoungException(String message){
+                super(message);
+            }
+
+            public static void main(String[] args) {
+                int age = 20;
+                if (age<18){
+                    throw new TooYoungException("your are not eligible to vote");
+                } else {
+                    System.out.println("You can vote succesfully");
+                }
+            }
+        }
+
+         */
 
 
 
+/*
+
+// NoClassDefFoundError Example
+
+class JavaTpoint
+{
+    void show()
+    {
+        System.out.println( "It is JavaTpoint section" );
+    }
+}
+class NoClassDefFoundErrorExample{
+    public static void main(String args[])
+    {
+        SEO data = new SEO();
+        data.showData();
+        data.show();
+    }
+}
 
 
+*/
 
 
+        /*
 
+class ClassCastExceptionExample {
+
+	public static void main(String[] args) {
+		// example for classCastException
+
+		try {
+		Object o = new String("Mahesh");
+	//	Object o = new Object();
+		String s = (String) o; //java.lang.ClassCastException: class java.lang.Object cannot be cast to class java.lang.String
+		System.out.println(s); // o/p : Mahesh
+
+		} catch (ClassCastException e) {
+			System.out.println("not allowed to type cast parent object to child object");
+			e.printStackTrace();
+
+		}
+
+	}
+}
+
+
+*/
+        /*
+
+        char[] c = new char[]{'a','b','c'};
+
+        String s = new String("abc");
+
+        System.out.println(c);
+        System.out.println(s);
+
+         */
     }
 
 }
